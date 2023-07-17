@@ -1,0 +1,12 @@
+<nav class="navbar-container">
+  <h1>DURIGON STORE</h1>
+
+  <div class="menu-button" (click)="toggleMenu()">
+    <i [ngClass]="menuOpen ? 'gg-close' : 'gg-menu-right'"></i>
+  </div>
+
+  <ul class="menu" [ngClass]="menuOpen ? 'open' : ''">
+    <li>Contato</li>
+    <li>Sobre nós</li>
+  </ul>
+</nav>

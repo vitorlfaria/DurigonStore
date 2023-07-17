@@ -1,1 +1,60 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap');
+
+:root {
+  --dark: #1E2225;
+  --light: #F1F3F5;
+}
+
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.44rem;
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+.heading {
+  font-size: 2.4rem;
+  line-height: 2.88rem;
+  letter-spacing: -2%;
+  font-weight: 800;
+  color: var(--light)
+}
+
+.sub-heading {
+  line-height: 1.92rem;
+  letter-spacing: -2%;
+  font-weight: 500;
+  color: var(--light)
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #111518;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #45474f;
+  border-radius: 1rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #595b64;
+}
