@@ -5,6 +5,8 @@ import { HomeComponent } from './pages/home/home.component';
 import {RouterModule} from "@angular/router";
 import {routes} from "./routes";
 import { TopThreeComponent } from './components/top-three/top-three.component';
+import { TextBarComponent } from './components/text-bar/text-bar.component';
+import { DetailsCardComponent } from './components/details-card/details-card.component';
 
 
 
@@ -12,7 +14,9 @@ import { TopThreeComponent } from './components/top-three/top-three.component';
   declarations: [
     HeroComponent,
     HomeComponent,
-    TopThreeComponent
+    TopThreeComponent,
+    TextBarComponent,
+    DetailsCardComponent
   ],
   imports: [
     RouterModule.forChild(routes),

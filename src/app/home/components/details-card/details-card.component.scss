@@ -1,0 +1,91 @@
+.product-card-container {
+    width: 30rem;
+    height: 50rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    position: relative;
+    background-color: #131518;
+    box-shadow: 1rem 1rem 1.5rem rgba(0, 0, 0, 0.34);
+    transition: all 0.3s ease-in-out;
+
+    .product-card-image {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .product-card-infos {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 50%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+        color: #fff;
+        transition: all 0.5s ease-in-out;
+
+        .product-card-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .product-card-description {
+            font-size: 1.2rem;
+            color: #bcbec7;
+            font-weight: 400;
+            margin-bottom: 2rem;
+        }
+
+        .product-card-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+        }
+
+        .product-card-buttons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .product-card-button {
+                width: 100%;
+                height: 4rem;
+                border-radius: 10px;
+                border: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.22);
+                color: var(--light);
+                font-size: 1.2rem;
+                font-weight: 700;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                margin-bottom: 1rem;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
+            }
+        }
+    }
+
+    &:hover {
+        transform: scale(1.03);
+
+        .product-card-image {
+            transform: scale(1.1);
+        }
+
+        .product-card-infos {
+            height: 100%;
+        }
+    }
+}
