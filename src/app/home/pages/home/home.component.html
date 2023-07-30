@@ -1,13 +1,83 @@
-<app-hero></app-hero>
-
+<app-hero />
+<app-text-bar id="jacket" title="Jaquetas" text="Descubra nossas jaquetas: estilo e funcionalidade em perfeita harmonia! Variedade para homens e mulheres,
+            materiais de qualidade e diversos estilos. Enfrente o frio com elegância ou adicione um toque
+            moderno ao seu visual - a escolha certa!" />
 <section class="products-section">
-    <app-details-card></app-details-card>
-    <app-details-card></app-details-card>
-    <app-details-card></app-details-card>
+    <app-details-card
+        *ngFor="let product of jackets"
+        name="{{product['name']}}"
+        description="{{product['description']}}"
+        price="{{product['price']}}"
+        image="{{product['image']}}"
+        link="{{product['ref']}}"
+    />
 </section>
-<section class="text-bar-section">
-    <app-text-bar></app-text-bar>
+
+<div class="bags" id="bags">
+    <div class="bags-content">
+        <h1>Bolsas e Carteiras Femininas</h1>
+        <p>
+            Descubra elegância e praticidade em nossa coleção de bolsas, carteiras femininas! Materiais de alta qualidade, espaço
+            organizado e diversos modelos para complementar seu look. Carteiras funcionais e charmosas, acomodando seus pertences
+            com segurança e estilo!
+        </p>
+        <a href="#">QUERO VER OS PRODUTOS</a>
+    </div>
+    <img src="../../../../assets/img/products/bags.jpeg" alt="Bolsas" #bagsImage>
+</div>
+
+<app-text-bar id="socks" title="Meias e Toucas" text="Descubra o conforto e estilo em nossa coleção de meias e toucas! Materiais macios e
+resistentes garantem proteção o ano todo. Encontre a combinação perfeita com estampas, padrões e cores vibrantes para complementar
+seu visual. Enfrente o frio com elegância e fique aquecido(a) em todas as ocasiões!" />
+<section class="products-section">
+    <app-details-card
+        *ngFor="let product of socks"
+        name="{{product['name']}}"
+        description="{{product['description']}}"
+        price="{{product['price']}}"
+        image="{{product['image']}}"
+        link="{{product['ref']}}"
+    />
 </section>
-<section class="top-three-section">
-    <app-top-three></app-top-three>
+
+<div class="bags" id="backpacks">
+    <div class="bags-content">
+        <h1>Mochilas</h1>
+        <p>
+            Descubra nossas mochilas modernas e funcionais, perfeitas para seu estilo de vida. Feitas com materiais resistentes,
+            oferecem conforto e durabilidade para estudantes, viajantes e aventureiros. Com compartimentos espaçosos e bolsos
+            organizadores, leve seus itens essenciais com facilidade para a escola, viagens ou no dia a dia. Seu companheiro
+            perfeito em todas as atividades!
+        </p>
+        <a href="#">QUERO VER OS PRODUTOS</a>
+    </div>
+    <img src="../../../../assets/img/products/mochila.jpg" alt="mochila" #backpack>
+</div>
+
+<app-text-bar id="tshirts" title="Camisetas e Calças Jeans" text="Descubra o conforto e estilo de nossas camisetas e calças jeans de alta qualidade
+- básicas, versáteis e estampadas. Macias, duráveis, perfeitas para o dia a dia e ocasiões especiais, com cortes e lavagens selecionados
+para todos os estilos e tamanhos. Seja casual ou elegante, nossas peças vão te acompanhar com muito estilo." />
+<section class="products-section">
+    <app-details-card
+        *ngFor="let product of pantsAndShirts"
+        name="{{product['name']}}"
+        description="{{product['description']}}"
+        price="{{product['price']}}"
+        image="{{product['image']}}"
+        link="{{product['ref']}}"
+    />
 </section>
+
+<div class="bags" id="makeups">
+    <div class="bags-content">
+        <h1>Maquiagem</h1>
+        <p>
+            Realce sua beleza com maquiagens de alta qualidade! Oferecemos marcas renomadas com produtos excepcionais, desde bases e
+            corretivos para uma pele perfeita até sombras e delineadores para realçar seus olhos. Nossos batons possuem uma variedade
+            de tons do clássico ao ousado, permitindo que você expresse sua personalidade. Formulados para longa duração e conforto,
+            cuidando da saúde da sua pele o dia todo.
+        </p>
+        <a href="#">QUERO VER OS PRODUTOS</a>
+    </div>
+    <img src="../../../../assets/img/products/makeup.jpg" alt="maquiagem" #makeup>
+</div>

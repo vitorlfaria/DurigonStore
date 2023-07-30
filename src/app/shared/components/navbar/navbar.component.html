@@ -1,12 +1,16 @@
 <nav class="navbar-container">
-  <h1>DURIGON STORE</h1>
+    <h1>DURIGON STORE</h1>
 
-  <div class="menu-button" (click)="toggleMenu()">
-    <i [ngClass]="menuOpen ? 'gg-close' : 'gg-menu-right'"></i>
-  </div>
+    <div class="menu-button" (click)="toggleMenu()">
+        <i [ngClass]="menuOpen ? 'gg-close' : 'gg-menu-right'"></i>
+    </div>
 
-  <ul class="menu" [ngClass]="menuOpen ? 'open' : ''">
-    <li>Contato</li>
-    <li>Sobre nós</li>
-  </ul>
+    <ul class="menu" [ngClass]="menuOpen ? 'open' : ''">
+        <li><a href="#jacket">Jaquetas</a></li>
+        <li><a href="#bags">Bolsas e Carteiras</a></li>
+        <li><a href="#socks">Meias e Toucas</a></li>
+        <li><a href="#backpacks">Mochilas</a></li>
+        <li><a href="#tshirts">Camisetas e Calças Jeans</a></li>
+        <li><a href="#makeups">Maquiagem</a></li>
+    </ul>
 </nav>

@@ -1,3 +1,13 @@
 .footer-container {
-    padding: 3rem;
+    padding: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .25rem;
+    }
 }
