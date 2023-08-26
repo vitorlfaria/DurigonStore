@@ -7,6 +7,7 @@ import {routes} from "./routes";
 import { TextBarComponent } from './components/text-bar/text-bar.component';
 import { DetailsCardComponent } from './components/details-card/details-card.component';
 import localePt from '@angular/common/locales/pt';
+import { InConstructionComponent } from './pages/in-construction/in-construction.component';
 
 registerLocaleData(localePt, 'pt-BR')
 
@@ -15,7 +16,8 @@ registerLocaleData(localePt, 'pt-BR')
     HeroComponent,
     HomeComponent,
     TextBarComponent,
-    DetailsCardComponent
+    DetailsCardComponent,
+    InConstructionComponent
   ],
   imports: [
     RouterModule.forChild(routes),
