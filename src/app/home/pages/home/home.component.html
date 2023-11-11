@@ -1,10 +1,16 @@
 <app-hero />
-<app-text-bar id="jacket" title="Jaquetas" text="Descubra nossas jaquetas: estilo e funcionalidade em perfeita harmonia! Variedade para homens e mulheres,
-            materiais de qualidade e diversos estilos. Enfrente o frio com elegância ou adicione um toque
-            moderno ao seu visual - a escolha certa!" />
+<div class="bags" id="winter">
+    <div class="bags-content">
+        <h1>Produtos de Inverno</h1>
+        <p>
+            Encontre o conforto e estilo que você precisa para enfrentar o inverno. Casacos, cachecóis e mais, para você se manter aquecido e na moda.
+        </p>
+    </div>
+    <img src="../../../../assets/img/photo8.jpeg" alt="Bolsas" #bagsImage>
+</div>
 <section class="products-section">
     <app-details-card
-        *ngFor="let product of jackets"
+        *ngFor="let product of winter"
         name="{{product['name']}}"
         description="{{product['description']}}"
         price="{{product['price']}}"
@@ -17,21 +23,14 @@
     <div class="bags-content">
         <h1>Bolsas e Carteiras Femininas</h1>
         <p>
-            Descubra elegância e praticidade em nossa coleção de bolsas, carteiras femininas! Materiais de alta qualidade, espaço
-            organizado e diversos modelos para complementar seu look. Carteiras funcionais e charmosas, acomodando seus pertences
-            com segurança e estilo!
+            Escolha entre nossa coleção de bolsas e carteiras para dar um toque de elegância e praticidade ao seu dia a dia.
         </p>
-        <a href="#">QUERO VER OS PRODUTOS</a>
     </div>
     <img src="../../../../assets/img/products/bags.jpeg" alt="Bolsas" #bagsImage>
 </div>
-
-<app-text-bar id="socks" title="Meias e Toucas" text="Descubra o conforto e estilo em nossa coleção de meias e toucas! Materiais macios e
-resistentes garantem proteção o ano todo. Encontre a combinação perfeita com estampas, padrões e cores vibrantes para complementar
-seu visual. Enfrente o frio com elegância e fique aquecido(a) em todas as ocasiões!" />
 <section class="products-section">
     <app-details-card
-        *ngFor="let product of socks"
+        *ngFor="let product of bags"
         name="{{product['name']}}"
         description="{{product['description']}}"
         price="{{product['price']}}"
@@ -44,22 +43,34 @@ seu visual. Enfrente o frio com elegância e fique aquecido(a) em todas as ocasi
     <div class="bags-content">
         <h1>Mochilas</h1>
         <p>
-            Descubra nossas mochilas modernas e funcionais, perfeitas para seu estilo de vida. Feitas com materiais resistentes,
-            oferecem conforto e durabilidade para estudantes, viajantes e aventureiros. Com compartimentos espaçosos e bolsos
-            organizadores, leve seus itens essenciais com facilidade para a escola, viagens ou no dia a dia. Seu companheiro
-            perfeito em todas as atividades!
+            Descubra mochilas versáteis e duráveis, ideais para viagens e aventuras. Tenha o que você precisa sempre à mão.
         </p>
-        <a href="#">QUERO VER OS PRODUTOS</a>
     </div>
     <img src="../../../../assets/img/products/mochila.jpg" alt="mochila" #backpack>
 </div>
-
-<app-text-bar id="tshirts" title="Camisetas e Calças Jeans" text="Descubra o conforto e estilo de nossas camisetas e calças jeans de alta qualidade
-- básicas, versáteis e estampadas. Macias, duráveis, perfeitas para o dia a dia e ocasiões especiais, com cortes e lavagens selecionados
-para todos os estilos e tamanhos. Seja casual ou elegante, nossas peças vão te acompanhar com muito estilo." />
 <section class="products-section">
     <app-details-card
-        *ngFor="let product of pantsAndShirts"
+        *ngFor="let product of backpacks"
+        name="{{product['name']}}"
+        description="{{product['description']}}"
+        price="{{product['price']}}"
+        image="{{product['image']}}"
+        link="{{product['ref']}}"
+    />
+</section>
+
+<div class="bags" id="makeups">
+    <div class="bags-content">
+        <h1>Brinquedos</h1>
+        <p>
+            Diversão garantida com nossa coleção de brinquedos para todas as idades. Desde educação até entretenimento, temos algo para todos.
+        </p>
+    </div>
+    <img src="../../../../assets/img/products/brinquedos.jpg" alt="brinquedos" #makeup>
+</div>
+<section class="products-section">
+    <app-details-card
+        *ngFor="let product of toys"
         name="{{product['name']}}"
         description="{{product['description']}}"
         price="{{product['price']}}"
@@ -77,7 +88,16 @@ para todos os estilos e tamanhos. Seja casual ou elegante, nossas peças vão te
             de tons do clássico ao ousado, permitindo que você expresse sua personalidade. Formulados para longa duração e conforto,
             cuidando da saúde da sua pele o dia todo.
         </p>
-        <a href="#">QUERO VER OS PRODUTOS</a>
     </div>
     <img src="../../../../assets/img/products/makeup.jpg" alt="maquiagem" #makeup>
 </div>
+<section class="products-section">
+    <app-details-card
+        *ngFor="let product of makeups"
+        name="{{product['name']}}"
+        description="{{product['description']}}"
+        price="{{product['price']}}"
+        image="{{product['image']}}"
+        link="{{product['ref']}}"
+    />
+</section>

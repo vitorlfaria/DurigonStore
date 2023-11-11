@@ -9,6 +9,7 @@
 
 .products-section {
     padding-block: 5rem;
+    margin-bottom: 4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,6 +20,7 @@
 }
 
 .bags {
+    width: 100%;
     background-color: var(--dark);
     display: flex;
     flex-direction: column;
@@ -29,6 +31,7 @@
     overflow: hidden;
 
     .bags-content {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -96,9 +99,11 @@
 }
 
 @media screen and (min-width: 1700px) {
-    .bags {
-        margin-top: 4rem;
+    .products-section {
+        padding-inline: 5rem;
+    }
 
+    .bags {
         .bags-content{
             padding-block: 12rem;
             padding-inline: 14rem;

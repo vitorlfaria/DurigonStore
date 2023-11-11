@@ -92,3 +92,9 @@
         }
     }
 }
+
+@media screen and (max-width: 400px) {
+    .product-card-container {
+        width: 19rem;
+    }
+}
