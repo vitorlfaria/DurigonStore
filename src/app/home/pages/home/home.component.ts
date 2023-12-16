@@ -11,6 +11,9 @@ gsap.registerPlugin(ScrollTrigger);
 })
 export class HomeComponent implements OnInit {
     @ViewChild('bagsImage', {static: true}) bagsImage: ElementRef<HTMLImageElement>;
+    @ViewChild('jacketsImage', {static: true}) jacketsImage: ElementRef<HTMLImageElement>;
+    @ViewChild('winterImage', {static: true}) winterImage: ElementRef<HTMLImageElement>;
+    @ViewChild('toysImage', {static: true}) toysImage: ElementRef<HTMLImageElement>;
     @ViewChild('backpack', {static: true}) backpack: ElementRef<HTMLImageElement>;
     @ViewChild('makeup', {static: true}) makeup: ElementRef<HTMLImageElement>;
 
@@ -22,6 +25,36 @@ export class HomeComponent implements OnInit {
         gsap.from(this.bagsImage.nativeElement, {
             scrollTrigger: {
                 trigger: this.bagsImage.nativeElement,
+                scrub: true,
+                start: "top center",
+                end: "170% center",
+            },
+            y: -400,
+        });
+
+        gsap.from(this.jacketsImage.nativeElement, {
+            scrollTrigger: {
+                trigger: this.jacketsImage.nativeElement,
+                scrub: true,
+                start: "top center",
+                end: "170% center",
+            },
+            y: -400,
+        });
+
+        gsap.from(this.winterImage.nativeElement, {
+            scrollTrigger: {
+                trigger: this.winterImage.nativeElement,
+                scrub: true,
+                start: "top center",
+                end: "170% center",
+            },
+            y: -400,
+        });
+
+        gsap.from(this.toysImage.nativeElement, {
+            scrollTrigger: {
+                trigger: this.toysImage.nativeElement,
                 scrub: true,
                 start: "top center",
                 end: "170% center",
@@ -50,20 +83,13 @@ export class HomeComponent implements OnInit {
         });
     }
 
-    winter: Record<string, unknown>[] = [
+    jackets: Record<string, unknown>[] = [
         {
             name: 'Puffer Três Cores Vemelha',
             description: 'Puffer três cores, azul-marinho, branco e vermelho. Vários tamanhos.',
             price: '100.23',
             image: 'puffer_vermelha.jpg',
             ref: 100
-        },
-        {
-            name: 'Puffer Masculina Azul Marinho',
-            description: 'Jaqueta super estilosa e confortável, ótimo para quele dia frio.',
-            price: 123.45,
-            image: 'puffer_masculina_1.jpg',
-            ref: 110
         },
         {
             name: 'Puffer Masculina Preta',
@@ -79,6 +105,9 @@ export class HomeComponent implements OnInit {
             image: 'puffer_azul.jpg',
             ref: 130
         },
+    ];
+
+    winter: Record<string, unknown>[] = [
         {
             name: 'Meia de lã',
             description: 'Meia de lã, super confortável e quentinha.',
@@ -91,13 +120,6 @@ export class HomeComponent implements OnInit {
             description: 'Touca de lã, super confortável e quentinha.',
             price: 123.45,
             image: 'touca_forro.jpg',
-            ref: 150
-        },
-        {
-            name: 'Meia socket',
-            description: 'Meia de lã, super confortável e quentinha.',
-            price: 123.45,
-            image: 'meia_socket.jpg',
             ref: 150
         },
         {

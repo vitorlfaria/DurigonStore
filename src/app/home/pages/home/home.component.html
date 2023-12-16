@@ -1,12 +1,40 @@
 <app-hero />
-<div class="bags" id="winter">
+<div class="bags" id="jackets">
     <div class="bags-content">
-        <h1>Produtos de Inverno</h1>
+        <h1>Jaquetas</h1>
         <p>
-            Encontre o conforto e estilo que você precisa para enfrentar o inverno. Casacos, cachecóis e mais, para você se manter aquecido e na moda.
+            Jaquetas excepcionais, feitas com materiais premium, proporcionam conforto e durabilidade incomparáveis. Escolha baseada unicamente na qualidade e no estilo atemporal.
         </p>
     </div>
-    <img src="../../../../assets/img/photo8.jpeg" alt="Bolsas" #bagsImage>
+    <img src="../../../../assets/img/photo8.jpeg" alt="Jaquetas" #jacketsImage>
+</div>
+<section class="products-section">
+    <app-details-card
+        *ngFor="let product of jackets"
+        name="{{product['name']}}"
+        description="{{product['description']}}"
+        price="{{product['price']}}"
+        image="{{product['image']}}"
+        link="{{product['ref']}}"
+    />
+</section>
+<div class="call-to-action">
+    <a href="#" class="btn">Veja mais produtos</a>
+</div>
+
+<div class="bags" id="winter">
+    <div class="bags-content">
+        <h1>Produtos de inverno</h1>
+        <p>
+            encontre o conforto e estilo
+            que você precisa para
+            enfrentar o inverno. Toucas, meias,
+            cachecóis e mais, para você se
+            manter aquecido e na moda.
+
+        </p>
+    </div>
+    <img src="../../../../assets/img/products/inverno.jpeg" alt="inverno" #winterImage>
 </div>
 <section class="products-section">
     <app-details-card
@@ -18,6 +46,9 @@
         link="{{product['ref']}}"
     />
 </section>
+<div class="call-to-action">
+    <a href="#" class="btn">Veja mais produtos</a>
+</div>
 
 <div class="bags" id="bags">
     <div class="bags-content">
@@ -38,6 +69,9 @@
         link="{{product['ref']}}"
     />
 </section>
+<div class="call-to-action">
+    <a href="#" class="btn">Veja mais produtos</a>
+</div>
 
 <div class="bags" id="backpacks">
     <div class="bags-content">
@@ -58,6 +92,9 @@
         link="{{product['ref']}}"
     />
 </section>
+<div class="call-to-action">
+    <a href="#" class="btn">Veja mais produtos</a>
+</div>
 
 <div class="bags" id="makeups">
     <div class="bags-content">
@@ -66,7 +103,7 @@
             Diversão garantida com nossa coleção de brinquedos para todas as idades. Desde educação até entretenimento, temos algo para todos.
         </p>
     </div>
-    <img src="../../../../assets/img/products/brinquedos.jpg" alt="brinquedos" #makeup>
+    <img src="../../../../assets/img/products/brinquedos.jpg" alt="brinquedos" #toysImage>
 </div>
 <section class="products-section">
     <app-details-card
@@ -78,6 +115,9 @@
         link="{{product['ref']}}"
     />
 </section>
+<div class="call-to-action">
+    <a href="#" class="btn">Veja mais produtos</a>
+</div>
 
 <div class="bags" id="makeups">
     <div class="bags-content">
@@ -89,7 +129,7 @@
             cuidando da saúde da sua pele o dia todo.
         </p>
     </div>
-    <img src="../../../../assets/img/products/makeup.jpg" alt="maquiagem" #makeup>
+    <img src="../../../../assets/img/products/makeup.jpeg" alt="maquiagem" #makeup>
 </div>
 <section class="products-section">
     <app-details-card
@@ -101,3 +141,6 @@
         link="{{product['ref']}}"
     />
 </section>
+<div class="call-to-action">
+    <a href="#" class="btn">Veja mais produtos</a>
+</div>
